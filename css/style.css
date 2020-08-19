@@ -1,0 +1,711 @@
+@import "fonts/fonts.css";
+body {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 18px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+}
+
+input::-moz-placeholder { color: #A3A3A3; transition: 0.3s;}
+input::placeholder { color: #A3A3A3; transition: 0.3s;}
+textarea::-moz-placeholder { color: #A3A3A3; transition: 0.3s;}
+textarea::placeholder { color: #A3A3A3; transition: 0.3s;}
+
+input:focus::-moz-placeholder { opacity: 0; }
+input:focus::placeholder { opacity: 0;}
+textarea:focus::-moz-placeholder { opacity: 0;}
+textarea:focus::placeholder { opacity: 0;}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    padding: 0;
+}
+
+/* Header */
+/* Header top */
+.header-top {
+    font-size: 16px;
+    background: #262626;
+    color: #acacac;
+    font-weight: 300;
+    padding: 8px 0;
+}
+.header-top a, footer a, .for-mobile.mobile-contact a {
+    color: #acacac;
+    transition: 0.3s;
+    text-decoration: none !important;
+    padding-left: 23px;
+}
+.for-mobile.mobile-contact {
+    color: #acacac;
+}
+.header-top a:hover, footer a:hover, .for-mobile.mobile-contact a:hover {
+    text-decoration: none;
+    color: #E23F35;
+}
+.h-phone a  {
+    background: url("../img/icon_phone.svg") left center no-repeat;
+    padding-left: 26px;
+}
+.h-phone a:hover  {
+    background: url("../img/icon_phone_hover.png") left center no-repeat;
+}
+.h-address  {
+    background: url("../img/icon_map.svg") left center no-repeat;
+    padding-left: 22px;
+}
+.h-mail a {
+    background: url("../img/icon_mail.png") left center no-repeat;
+    padding-left: 27px;
+}
+.h-mail a:hover {
+    background: url("../img/icon_mail_hover.png") left center no-repeat;
+}
+
+/* Menu */
+.main-menu ul li {
+    display: inline-block;
+}
+.main-menu ul li a {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #000;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.main-menu ul li a:hover {
+    color: #d33b30;
+}
+.main-menu {
+    background: #fff;
+}
+.wrap-menu {
+    position: relative;
+    height: 104px;
+}
+.left-menu, .right-menu, .left-footer, .right-footer {
+    position: relative;
+    z-index: 10;
+}
+.logo {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.left-menu ul li {
+    margin-right: 45px;
+}
+.right-menu ul li {
+    margin-left: 45px;
+}
+/* Header End */
+
+/* Main Banner */
+.centered-content {
+    background: url("../img/mac.png") center top no-repeat, url("../img/clv.png") center bottom no-repeat, url("../img/items_bg.png") center no-repeat, url("../img/fon.jpg") center/cover no-repeat #d33b30;
+    position: absolute;
+    top: 144px;
+    left: 0;
+    right: 0;
+    bottom: 135px;
+    text-align: center;
+}
+section.full-height {
+    position: relative;
+    height: 100vh;
+}
+.banner-text {
+    font-size: 24px;
+    font-weight: 300;
+    color: #fff;
+    line-height: 28px;
+}
+.banner-text h1 {
+    font-size: 62px;
+    font-weight: bold;
+    line-height: 54px;
+    text-transform: uppercase;
+}
+.banner-text h3 {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 54px;
+}
+.banner-text {
+    width: 64%;
+    margin: 0 auto;
+}
+.main-btn {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    background: #363636;
+    width: 170px;
+    line-height: 50px;
+    border-radius: 5px;
+}
+.main-btn:hover {
+    box-shadow: 0 0 7px 0 #000;
+}
+.full-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 135px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background: #363636;
+    color: #fff;
+    /*border-bottom: 10px solid #f7f7f7;*/
+}
+span.red-color {
+    color: #E23F35;
+    font-weight: bold;
+}
+.bottom-text h2 {
+    margin: 0;
+}
+.banner-text .main-btn {
+    margin-top: 10px;
+}
+.banner-text .main-btn {
+    margin-top: 10px;
+}
+.full-bottom:after {
+    content: "";
+    border: 15px solid transparent;
+    border-bottom-color: #F7F7F7;
+    position: absolute;
+    bottom: -1px;
+    left: 49.5%;
+    left: calc(50% - 15px/2);
+}
+/* Main Banner End */
+
+/* Раскрутка сайтов */
+section.seo-sites {
+    background: #F7F7F7;
+    padding: 100px 0 60px 0;
+    text-align: center;
+}
+.main-title h2 {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.main-title {
+    width: 85%;
+    margin: 0 auto 40px;
+}
+span.red-item {
+    display: block;
+    width: 207px;
+    background: #DB3D32;
+    color: #fff;
+    margin: 0 auto 10px;
+    font-size: 58px;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 11px 0;
+}
+.seo-site-item {
+    padding: 0 60px;
+    line-height: 22px;
+}
+.center-img {
+    margin-top: 40px;
+    padding: 0 100px;
+}
+.center-img img {
+    margin-bottom: 30px;
+}
+.center-img p {
+    margin-bottom: 0;
+}
+span.sub-item {
+    font-weight: 600;
+}
+.main-title {
+    text-align: center;
+}
+/* Раскрутка сайтов КОНЕЦ */
+
+/* Состав Работ */
+section.contain-works {
+    padding: 100px 0 70px 0;
+}
+.works-item {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    margin-bottom: 30px;
+    padding: 30px;
+    line-height: 23px;
+    background: #fff;
+}
+.works-item p {
+    margin: 0;
+}
+section.contain-works .col-6 {
+    display: -ms-flexbox;
+    display: flex;
+}
+h3.wi-title {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.works-item-text {
+    padding-left: 25px;
+}
+.works-item-icon {
+    padding-top: 25px;
+}
+section.contain-works .col-6 {
+    padding: 0;
+}
+section.contain-works .col-6:nth-child(even) {
+    padding-left: 15px;
+}
+section.contain-works .col-6:nth-child(odd) {
+    padding-right: 15px;
+}
+section.contain-works {
+    position: relative;
+    z-index: 1;
+}
+section.contain-works:after {
+    content: "";
+    position: absolute;
+    height: 623px;
+    left: 0;
+    right: 0;
+    background: url("../img/details1.png") center no-repeat;
+    bottom: -350px;
+    z-index: -1;
+    background-size: 100%;
+}
+section.make-site {
+    background: url("../img/seobg.jpg") center/100% no-repeat, #F7F7F7;
+    padding: 100px 0 50px 0;
+}
+.tv-block {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
+.tv-block p {
+    margin-top: 30px;
+}
+/* Состав Работ КОНЕЦ */
+
+/* ШАГИ К УСПЕХУ КОНЕЦ */
+.all-right {
+    text-align: right;
+}
+.step-img {
+    position: relative;
+    margin-top: 100px;
+}
+.step-img img {
+    float: right;
+    margin-right: -40px;
+}
+.step-img:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+.sn-text {
+    font-size: 23px;
+    font-weight: 600;
+    line-height: 28px;
+}
+.step-number {
+    font-size: 72px;
+    font-weight: 900;
+    color: #D33A2F;
+    margin-left: 15px;
+    line-height: 70px;
+}
+.step-name {
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.step-text {
+    line-height: 23px;
+}
+.step-item {
+    margin-bottom: 60px;
+}
+.loop-steps {
+    text-align: center;
+}
+.all-left {
+    text-align: left;
+}
+.all-left .step-number {
+    margin: 0 15px 0 0;
+}
+section.step-to-success {
+    padding-top: 60px;
+    background: url("../img/phone-pen.jpg")  center no-repeat;
+    background-size: 100%;
+}
+section.step-to-success .main-title {
+    margin-bottom: 80px;
+}
+.col.all-right, .col.all-left {
+    padding: 0;
+}
+/* ШАГИ К УСПЕХУ КОНЕЦ */
+
+/* НАШИ ПРИНЦИПЫ КОНЕЦ */
+section.principe {
+    background: url("../img/black_bg_det.png") center no-repeat, url("../img/black_bg.jpg") center no-repeat #202020;
+    color: #fff;
+    padding: 100px 0;
+    position: relative;
+    z-index: 1;
+}
+section.principe:after {
+    position: absolute;
+    content: '';
+    height: 400px;
+    left: 0;
+    right: 0;
+    bottom: -200px;
+    background: url("../img/object_coffee.png") center no-repeat;
+}
+
+.red-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.red-title h2 {
+    font-weight: bold;
+    text-transform: uppercase;
+    background: #D33A2F;
+    display: inline-block;
+    margin: 0;
+    font-size: 36px;
+    padding: 5px 12px;
+}
+.principe-item {
+    line-height: 23px;
+    padding-left: 50px;
+    margin-bottom: 50px;
+    background: url("../img/tick.png") left top no-repeat;
+}
+.principe-item h4 {
+    font-size: 24px;
+}
+/* НАШИ ПРИНЦИПЫ КОНЕЦ */
+
+/* ЗАЩИШАЕМ САЙТ ОТ ВИРУСОВ */
+section.safe-site {
+    background: #F7F7F7;
+    padding: 190px 0 70px 0;
+    position: relative;
+    z-index: 0;
+}
+section.safe-site:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 1920px;
+    height: 304px;
+    background: url("../img/cabel.png") 220px center no-repeat;
+    top: -30px;
+}
+section.safe-site:before {
+    position: absolute;
+    content: '';
+    height: 609px;
+    left: 0;
+    right: 0;
+    bottom: -240px;
+    background: url("../img/ipad.png") center no-repeat;
+}
+ul.safe-steps li {
+    font-weight: bold;
+    padding: 8px 0px 8px 50px;
+    margin: 35px 0;
+    background: url("../img/safe_icon.png") left center no-repeat;
+}
+.bottom-safe {
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+/* ЗАЩИШАЕМ САЙТ КОНЕЦ */
+
+/* Цены */
+span.subtitle {
+    line-height: 23px;
+}
+section.prices {
+    padding: 100px 0 50px;
+}
+.price-item {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    text-align: center;
+    padding: 35px 38px;
+}
+span.main-btn {
+    display: inline-block;
+}
+h4.price-title {
+    line-height: 40px;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: bold;
+}
+.price-icon {
+    min-height: 110px;
+}
+.price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #D33A2F;
+    margin: 10px 0;
+}
+.price-text {
+    line-height: 26px;
+    margin-bottom: 25px;
+}
+section.red-line {
+    background: #D33A2F;
+    text-align: center;
+    color: #fff;
+    padding: 20px 0;
+}
+.red-line-text p {
+    margin: 0;
+}
+.red-line-text {
+    width: 70%;
+    margin: 0 auto;
+    line-height: 23px;
+}
+/* Цены КОНЕЦ */
+
+/* форма заказа */
+.form-block {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    width: 570px;
+    margin: 0 auto;
+    padding: 60px 40px;
+}
+
+section.form-content {
+    background: url("../img/form_bg.jpg") center no-repeat #F7F7F7;
+    padding: 100px 0;
+    background-size: 100%;
+}
+select:invalid { color: #A3A3A3; }
+.form-field label {
+    font-size: 14px;
+    line-height: 16px;
+    display: block;
+    margin-bottom: 6px;
+}
+input[type="text"], input[type="tel"], input[type="email"], textarea, select {
+    width: 100%;
+    border: 1px solid #DBDBDB;
+    padding: 9px 11px;
+    font-size: 14px;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus, textarea:focus, select:focus,
+input[type="text"]:hover, input[type="tel"]:hover, input[type="email"]:hover, textarea:hover, select:hover {
+    border-color: #363636;
+}
+.form-field {
+    margin-bottom: 25px;
+}
+textarea {
+    height: 115px;
+    resize: none;
+}
+input.main-btn {
+    font-size: 14px;
+    background: #D33A2F;
+    border-radius: 5px;
+    width: 100%;
+}
+/* форма заказа КОНЕЦ */
+/* footer */
+footer {
+    background: #202020;
+    color: #ACACAC;
+}
+.wrap-footer {
+    position: relative;
+    height: 104px;
+}
+footer .h-mail {
+    margin-right: 40px;
+}
+/* footer КОНЕЦ */
+.for-mobile, .mobile-phone {
+    display: none;
+}
+
+
+/* Наши результаты */
+section.our-results {
+    background: #ECECEC;
+    padding: 100px 0;
+}
+section.our-results .main-title {
+    margin-bottom: 60px;
+}
+.results-content {
+    text-align: center;
+}
+.result-item {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    width: 440px;
+    display: inline-block;
+    margin: 0 15px 40px 15px;
+    padding: 10px 24px 20px 24px;
+}
+.result-logo img {
+    width: 113px;
+    margin-bottom: 10px;
+}
+.result-img img {
+    width: 100%;
+}
+.result-download a {
+    display: inline-block;
+    font-weight: bold;
+    text-decoration: underline;
+    color: #000;
+    transition: 0.2s;
+    padding: 15px 0 15px 60px;
+    background: url("../img/file.png") left center no-repeat;
+}
+.result-download a:hover {
+    color: #d33b30;
+}
+.result-download {
+    margin-top: 20px;
+}
+span.main-btn {
+    text-align: center;
+}
+.more-results {
+    text-align: center;
+    margin-top: 20px;
+}
+.more-results .main-btn {
+    background: #DD3E33;
+    width: 230px;
+}
+/* Наши результаты Конец */
+.logo img {
+    width: 176px;
+}
+
+
+/* Pop Up */
+.pop-up-content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transition: 0.3s;
+    background: rgba(56, 56, 56, 0.8);
+    opacity: 0;
+    visibility: hidden;
+    overflow: auto;
+}
+.pop-up-content {
+    text-align: center;
+    padding-top: 150px;
+}
+.pop-up-block {
+    margin: 0 auto;
+    text-align: left;
+}
+.pop-up-block{
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.pop-up-block {
+    background: #fff;
+    position: relative;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    max-width: 95%;
+}
+.pop-up-block  .form-block {
+    box-shadow: none;
+    background: transparent;
+    padding-top: 30px;
+}
+.pop-up-body .main-title {
+    margin-bottom: 0;
+    margin-top: 40px;
+}
+.pop-up-content.active-in {
+    opacity: 1;
+    visibility: visible;
+    z-index: 1000;
+}
+.close-pop-up {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background: url("../img/close.png") center no-repeat;
+    top: 25px;
+    right: 25px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.close-pop-up:hover {
+    transform: rotate(90deg);
+}
+/* Pop Up END */
